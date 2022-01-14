@@ -1,0 +1,1173 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body{
+    background-color: rgb(47,42,87);
+}
+
+
+.landing-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(/images/1stPage/Asset\ 1.png);
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+ 
+.topnav {
+    overflow: hidden;
+    width: 100%;
+    background-color: #343a75f1;
+    z-index: 100;
+    min-height: 10%;
+}
+  
+.topnav a {
+    float: left;
+    display: flex;
+    align-items: center;
+    display: none;
+    color: white;
+    text-align: center;
+    padding: 5%;
+    text-decoration: none;
+    font-size: 7vw;
+    background-color: #343a75f1;
+    font-family: 'Fugaz One', cursive;
+    font-family: 500;
+    
+}
+
+.topnav a img{
+    max-width: 30%;
+}  
+
+hr{
+    background-color: gold;
+    border: 1px solid gold;
+}
+.spacer-1{
+    display: none;
+}
+.topnav .icon {
+    display: none;
+}
+
+  
+@media screen and (max-width: 650px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a:first-child{
+        display: block;
+        max-width: 70%;
+    }
+
+    .topnav a.icon {
+      float: right;
+      display: block;
+      color: white;
+      background-color: #343a7500;
+      border: none;
+      z-index: 100;
+    }
+    .topnav a:hover{
+        color: gold;
+        transition: .4s;
+    }
+
+    .landing-container nav{display: none;}
+}
+  
+@media screen and (max-width: 650px) {
+    .topnav.responsive {position: fixed;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 1%;
+      top: 1%;
+      color: white;
+      z-index: 100;
+    }
+    .socials-3 a:first-child{
+        display: none;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .topnav a img{
+        display: block;
+    }
+    .spacer-1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 3vh;
+        height:60vh;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+        color: white;
+        flex-direction: column;
+
+    }
+    .spacer-1 span{
+        font-size: 5vh;
+        font-family: 'Fugaz One', cursive;
+        letter-spacing: .1rem;
+    }
+    .spacer-1 img{
+        max-width: 70%;
+        padding-top: 5%;
+    }
+    .topnav{
+        position: fixed;
+    }
+}
+
+
+.socials-3{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.socials-3 a{
+    text-decoration: none;
+    color: white;
+    font-size: 6vw;
+}
+
+.socials-3 a:hover{
+    color: gold;
+    transition: .4s;
+}
+
+
+
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    align-items: center;
+    max-width: 1500px;
+    position: absolute;
+    font-size: 2vw;
+    color: white;
+    z-index: 5;
+    font-family: 'Fugaz One', cursive;
+    font-weight: 500;
+
+}
+nav a:hover{
+    color: gold;
+    text-decoration: underline;
+    transition: .4s;
+}
+
+nav img{
+   max-width: 20%;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    padding-left: 7%;
+    padding-right: 7%;
+}
+
+
+.socials{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right: 0;
+    top: 180px;
+    font-size: 2vw;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    z-index: 5;
+    /* background-color: #3a4df7a9; */
+    padding-right: .5em;
+    padding-left: .5em;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.socials a{
+    text-decoration: none;
+    color: white;
+}
+
+.socials i{
+    padding-top: 2.5vh;
+}
+.socials a:last-child{
+    padding-bottom: 2vh;
+}
+.fixed-element img{
+   margin-bottom: -20px;
+   width: 100%;
+}
+.fixed-element{
+    width: 100%;
+}
+.socials a:hover{
+    color: gold;
+}
+
+.information{
+    display: flex;
+    padding: 20px;
+    background-image: url(/images/2ndPage/Asset\ 99.png) ;
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    
+}
+.sassy-pic{
+    width: 50%;
+}
+
+.sassy-pic img{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+
+.box-item{
+    background-color: #343a75b4;
+    margin: 5%;
+    font-size: 3vw;
+    text-align: center;
+    color: gold;
+    font-weight: bold;
+    align-items: center;
+    max-width: 25%;
+    min-width: 25%;
+    padding: 1.5vw;
+    height: 18vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.box-item p{
+    font-size: 1vw;
+    color: white;
+    font-weight: lighter;
+}
+
+
+.box-item:hover{
+    background-color: #3a4df7a9;
+    transition: 1s;
+    
+}
+
+.box-container{
+    width: 50%;
+    height: 100%;
+
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 50px;
+    
+}
+.box-con{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.box-container img{
+    max-width: 400px;
+}
+
+.sassy-2 img{
+    padding: 0;
+    max-width: 40vw;
+    margin-left: 100px;
+    width: 50%;
+
+}
+
+.showcase-title{
+    background-color: #3843a86b;
+    text-align: center;
+    padding: 1%;
+    font-size: 7vh;
+    color: gold;
+    font-family: 'Fugaz One', cursive;
+    font-weight: 500;
+    width: 100%;
+    z-index: 20;
+    
+}
+
+.slider-container{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    padding-top: 20px;
+    animation: moveSlideshow 60s linear infinite;
+}
+
+
+.slider img{
+    max-width: 400px;
+    padding-right: 15px;
+}
+
+.slider-parent{
+    width: 100%;
+    overflow: hidden;
+}
+
+@keyframes moveSlideshow {
+    from {
+      transform: translateX(0%);
+    }
+  
+    to {
+      transform: translateX(-295%);
+    }
+  }
+
+/* BANNER */
+
+
+.banner-container img{
+    max-width: 20%;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0px;
+    z-index: 1;
+}
+#hand-1{
+    left: 30%;
+}
+#hand-2{
+    right: 30%;
+}
+.banner-container{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url(/images/3rdPage/Asset\ 23.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+}
+
+
+.banner-parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.banner-container li{
+    padding: 5px;
+    font-size: 1vw;
+}
+
+.banner h2{
+    font-weight: bold;
+    font-size: 2.5vw;
+    max-width: 60%;
+   
+}
+
+.banner a{
+    padding: 12px;
+    background-color: rgb(245, 73, 116);
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+    font-size: 1.5vw;
+    border-radius: 5px;
+    
+}
+.banner{
+    padding: 5%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    z-index: 3;
+}
+
+.banner-list{
+    padding: 5%;
+    z-index: 3;
+    max-width: 25%;
+}
+.banner-list li{
+    font-size: 1.5vw;
+}
+
+ /* Hover info */
+
+.main-info-container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+
+}
+.main-info-container img{
+    max-width: 100%;
+}
+.hoverables{
+    position: absolute;
+    z-index: 5;
+    bottom: 37%;
+    left: 84%;
+    overflow: hidden;
+    
+}
+
+.hoverables{
+    min-width: 20%;
+    max-width: 20.1%;
+}
+.hoverables img{
+    overflow: hidden;
+}
+
+.metaverse{
+    position: absolute;
+    z-index: 5;
+    bottom: 38.1%;
+    left: .13%;
+    min-width: 14.5%;
+    max-width: 14.5%;
+    
+}
+.spraypaint{
+    position: absolute;
+    z-index: 5;
+    bottom: 66.4%;
+    left: 38.09%;
+    min-width: 30.5%;
+    max-width: 30.5%;
+    
+}
+.coin{
+    position: absolute;
+    z-index: 5;
+    bottom: 75.3%;
+    left: 71.4%;
+    min-width: 16%;
+    max-width: 16%;
+    
+}
+
+.meta-hover{
+    position: absolute;
+    z-index: 5;
+    bottom: 0;
+    left:0;
+    display: none;
+}
+.poster-hover{
+    position: absolute;
+    z-index: 5;
+    bottom: 0;
+    left:0;
+    display: none;
+
+}
+.coin-hover{
+    position: absolute;
+    z-index: 5;
+    bottom: 0;
+    left:0;
+    display: none;
+}
+.spray-hover{
+    position: absolute;
+    z-index: 5;
+    bottom: 0;
+    left:0;
+    display: none;
+}
+
+.metaverse:hover ~ .meta-hover{
+    display: block;
+    transition: .4s;
+}
+.hoverables:hover ~ .poster-hover{
+    display: block;
+    transition: .4s;
+}
+.spraypaint:hover ~ .spray-hover{
+    display: block;
+    transition: .4s;
+}
+
+.coin:hover ~ .coin-hover{
+    display: block;
+    transition: .4s;
+}
+
+/* info boxes */
+
+.textbox{
+    position: absolute;
+    z-index: 7;
+    background-color: #343a75c5;
+    font-size: 1.4vw;
+    color: white;
+    padding: 2vw;
+    font-weight: lighter;
+    font-family: 'Roboto', sans-serif;
+    max-width: 30vw;
+    border-radius: 15px;
+}
+
+
+.textbox a{
+    padding: 12px;
+    background-color: rgb(245, 73, 116);
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+    font-size: 1.5vw;
+    border-radius: 5px;
+}
+
+#textbox-1{
+    top: 4%;
+    left: 8%;
+    text-align: center;
+}
+#textbox-1 p{
+    padding-bottom: 20px;
+}
+
+#textbox-2{
+    top: 19%;
+    left: 8%;
+    text-align: center;
+}
+#textbox-3{
+    top: 26%;
+    right: 10%;
+    text-align: center;
+}
+#textbox-4{
+    top: 50%;
+    right: 10%;
+    text-align: center;
+}
+#textbox-5{
+    top: 58%;
+    left: 15%;
+    text-align: center;
+}
+
+.textbox:hover{
+    background-color: #3a4df7e5;
+    transition: 1s;
+    
+}
+
+/* Roadmap */
+
+.roadmap-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.roadmap-container h3{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5vw;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    max-width: 50%;
+    padding: 2%;
+}
+
+.roadmap-item{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1vw;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    padding: 15px;
+    border-bottom: 1px solid white;
+    min-height: 15vw;
+}
+.roadmap-item:last-child{
+    border-bottom: none;
+}
+.roadmap-item img{
+    width: 100%;
+    height: 100%;
+}
+.roadmap-img{
+    max-width: 20%;
+}
+.roadmap-info{
+    min-width: 60%;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+.roadmap-info span{
+    font-size: 1.3vw;
+    font-weight: bold;
+}
+
+.percentage-box h3{
+    font-size: 2.5vw;
+    color: gold;
+}
+.percentage-box{
+    background-color: #343a75e3 ;
+    padding: 3%;
+}
+
+/* AFTERPARTY */
+
+.afterparty-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(/images/Untitled_Artwork\ 15.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.afterparty-container h3{
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.2vw;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    max-width: 50%;
+    padding-bottom: 5%;
+}
+.afterparty-container h2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 4vw;
+    font-family: 'Fugaz One', cursive;
+    letter-spacing: .1rem;
+    color: yellow;
+    max-width: 50%;
+    padding: .1%;
+    padding-top: 3%;
+}
+
+
+.afterparty-item{
+    width: 80%;
+    font-size: 1.2vw;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    padding: 1%;
+    background-color: #343a75e3 ;
+    min-height: 5vw;
+    margin-bottom: 3%;
+    text-align: center;
+}
+
+.afterparty{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.afterparty p{
+    padding-left: 15px;
+    text-align: left;
+}
+.afterparty h4{
+    font-size: 1.5vw;
+    font-weight: bold;
+    min-width: 20vw;
+    padding-left: 1%;
+}
+.VR{
+   background-color: gold; 
+   width: 1px;
+   height: 8vh;
+}
+
+
+
+
+
+
+.collapsible {
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 70%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 2vw;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    margin-right: 0;
+    border-bottom: 1px solid white;
+}
+  
+.active, .collapsible:hover {
+    
+    transition: .4s;
+}
+  
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+   
+    width: 70%;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-size: 1vw;
+    border-bottom-left-radius: 10px;
+}
+
+
+.faq-container{
+    padding-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65%;
+    flex-direction: column;
+    background-color: rgba(173, 216, 230, 0.829);
+    border-radius: 15px;
+    padding-bottom: 5%;
+
+}
+
+.faq-parent{
+    background-image: url(/images/1x/1x/1x/Asset\ 44.png);
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #88BED7;
+    position: relative;
+}
+
+
+.back-image{
+    background-image: url(/images/Asset\ 46.png);
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+}
+
+
+.end img{
+    max-width: 80%;
+}
+.end{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* TEAM */
+
+.team-parent{
+    background-image: url(/images/1x/1x/Bigfoot-517258962.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    flex-direction: column;
+}
+.team-header{
+    text-align: center;
+    font-weight: bold;
+    font-size: 4vw;
+    font-family: 'Fugaz One', cursive;
+    color: gold;
+    max-width: 50%;
+    padding: 1%;
+    padding-top: 3%;
+}
+.boss-squatch{
+    z-index: 2;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5vw;
+    width: 100%;
+    min-width: 20%;
+    padding-top: 1%;
+}
+
+.boss-squatch img{
+    width: 30%;
+    padding: 1%;
+}
+
+
+.team-content{
+    text-align: center;
+    font-size: 1.2vw;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    max-width: 70%;
+    padding-top: 2%;
+    padding-bottom: 5%;
+}
+.back-team{
+    background-color: #f1eb4433;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+.end{
+    height: 200px;
+}
+
+
+
+/* footer */
+
+.spacer-2{
+    height: 65vh;
+}
+
+.footer{
+    position: absolute;
+    right: 5%;
+    bottom: 15%;
+    z-index: 4;
+    font-size: 1.5vw;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    color: white;
+    width: 20%;
+    text-align: center;
+    justify-content: space-evenly;
+}
+.footer img{
+    max-width: 90%;
+    padding: 2%;
+}
+
+.socials-2{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 10px;
+}
+.socials-2 a{
+    text-decoration: none;
+    color: black;
+    font-size: 2vw;
+    background-color: white;
+    padding: 5px;
+    width: 15%;
+    height: 15%;
+    border-radius: 10px;
+}
+
+.socials-2 a:hover{
+    color: gold;
+    background-color: black;
+    transition: .4s;
+}
+
+
+.spacer-3{
+    display: none;
+}
+
+
+@media only screen and (max-width: 900px) {
+ 
+    .sassy-pic{
+        display: none;
+    }
+    .box-container{
+        width: 100%;
+    }
+
+    .discord-container img{
+        bottom: -20px;
+       
+    }
+
+    .story-container img{
+        display: none;
+    }
+    
+    .story{
+        max-width: 80%;
+    }
+
+
+  }
+  
+
+  @media only screen and (max-width: 700px) {
+    .discord-container img{
+        display: none;
+    }
+
+    .discord-container{
+        justify-content: center;
+    }
+    
+    .story-container{
+        font-size: 16px;
+    }
+    .box-item{
+        width: 25%;
+        font-size: 3.5vh;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .box-con{
+        padding: 0;
+    }
+    .box-container{
+        padding: 0;
+    }
+    .information{
+        padding: 0;
+    }
+    .box-item p{
+        font-size: 1.2vh;
+    }
+    .slider img{
+        max-width: 250px;
+    }
+    .team-container{
+        flex-wrap: wrap;
+    }
+    .team{
+        width: 80%;
+    }
+
+
+    .banner-container{
+        height: 30vh;
+    }
+    
+    nav a{
+        font-size: 18px;
+    }
+    .socials{
+        font-size: 16px;
+        display: none;
+    }
+    .landing-container{
+       background-image: url(/images/1x/1x/1x/Artboard\ 1.png);
+       background-size: cover;
+        
+    }
+    
+    .faq-parent{
+        background-image: url(/images/1x/1x/1x/Artboard\ 2.png);
+        background-size: cover;
+    }
+
+    .end{
+        height: 10%;
+        padding: 15px;
+    }
+    .socials-2 a{
+        margin-left: 7px;
+    }
+    .spacer-2{
+        height: 30vh;
+    }
+
+
+    .showcase-title{
+        font-size: 3.5vh;
+    }
+    .banner h2{
+        font-size:2vh;
+        max-width: 100%;
+    }
+    .banner a{
+        font-size: 1.2vh;
+    }
+    .banner-list li{
+        font-size: 1.2vh;
+    }
+    .banner{
+        justify-content: flex-start;
+    }
+    .banner-container{
+        align-items: flex-start;
+    }
+    .banner-container img{
+        max-width: 30%;
+    }
+    #hand-1{
+        left: 19%;
+
+    }
+    #hand-2{
+        right: 19%;
+        
+    }
+  }
+
+@media only screen and (max-width: 500px) {
+    .banner h2{
+        font-size:1.8vh;
+    }
+    .banner a{
+        font-size: 1vh;
+        margin: 0;
+        margin-top: 4%;
+    }
+    .banner-list li{
+        font-size: 1vh;
+    }
+
+    .faq-container{
+        width: 80%;
+        font-size: 2.5vh;
+    }
+    .collapsible{
+        width: 80%;
+        font-size: 1.8vh;
+    }
+    .content{
+        width: 80%;
+        font-size: 1.5vh;
+    }
+
+    .roadmap-item{
+        font-size: 1vh;
+    }
+    .roadmap-info span{
+        font-size: 1.5vh;
+    }
+    .roadmap-item img{
+        display: none;
+    }
+    .roadmap-info{
+        min-width: 85%;
+    }
+    .roadmap-container{
+        padding-bottom: 10%;
+    }
+    .percentage-box h3{
+        font-size: 3vh;
+    }
+    .percentage-box{
+        max-width: 20%;
+        text-align: center;
+    }
+    .roadmap-container h3{
+        font-size: 1.5vh;
+        max-width: 80%;
+        padding: 5%;
+    }
+    .afterparty-container h2{
+        font-size: 2.5vh;
+        max-width: 70%;
+    }
+    .afterparty-container h3{
+        font-size: 1vh;
+        max-width: 68%;
+    }
+    .afterparty-item{
+        font-size: 1vh;
+    }
+    .afterparty h4{
+        font-size: 1vh;
+    }
+    .hide{
+        display: none !important;
+    }
+    .main-info-container{
+        display: flex;
+        height: auto;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        background-image: url(/images/Asset\ 46.png);
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-attachment: fixed;
+        padding-bottom: 5% ;
+    }
+    .textbox{
+        position: static;
+        max-width: 70%;
+        font-size: 1.5vh;
+        margin: 2%;
+        padding: 8%;
+    }
+    .textbox a{
+        font-size: 1vh;
+    }
+}
