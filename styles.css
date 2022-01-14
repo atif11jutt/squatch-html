@@ -28,7 +28,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url(/images/1stPage/Asset\ 1.png);
+    background-image: url(images/1stPage/Asset\ 1.png);
     height: 100%;
     background-attachment: fixed;
     background-position: center center;
@@ -243,7 +243,7 @@ nav a{
 .information{
     display: flex;
     padding: 20px;
-    background-image: url(/images/2ndPage/Asset\ 99.png) ;
+    background-image: url(images/2ndPage/Asset\ 99.png) ;
     height: 100%;
     background-attachment: fixed;
     background-position: center;
@@ -387,7 +387,7 @@ nav a{
     width: 100%;
     align-items: center;
     justify-content: space-between;
-    background-image: url(/images/3rdPage/Asset\ 23.png);
+    background-image: url(images/3rdPage/Asset\ 23.png);
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 10px;
@@ -681,7 +681,7 @@ nav a{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-image: url(/images/Untitled_Artwork\ 15.png);
+    background-image: url(images/Untitled_Artwork\ 15.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -795,7 +795,7 @@ nav a{
 }
 
 .faq-parent{
-    background-image: url(/images/1x/1x/1x/Asset\ 44.png);
+    background-image: url(images/1x/1x/1x/Asset\ 44.png);
     height: auto;
     background-position: center;
     background-repeat: no-repeat;
@@ -809,7 +809,7 @@ nav a{
 
 
 .back-image{
-    background-image: url(/images/Asset\ 46.png);
+    background-image: url(images/Asset\ 46.png);
     height: 100%;
     background-attachment: fixed;
     background-position: center;
@@ -831,7 +831,7 @@ nav a{
 /* TEAM */
 
 .team-parent{
-    background-image: url(/images/1x/1x/Bigfoot-517258962.jpeg);
+    background-image: url(images/1x/1x/Bigfoot-517258962.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -1022,13 +1022,13 @@ nav a{
         display: none;
     }
     .landing-container{
-       background-image: url(/images/1x/1x/1x/Artboard\ 1.png);
+       background-image: url(images/1x/1x/1x/Artboard\ 1.png);
        background-size: cover;
         
     }
     
     .faq-parent{
-        background-image: url(/images/1x/1x/1x/Artboard\ 2.png);
+        background-image: url(images/1x/1x/1x/Artboard\ 2.png);
         background-size: cover;
     }
 
@@ -1152,7 +1152,7 @@ nav a{
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
-        background-image: url(/images/Asset\ 46.png);
+        background-image: url(images/Asset\ 46.png);
         height: 100%;
         background-position: center;
         background-repeat: no-repeat;
