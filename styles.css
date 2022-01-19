@@ -37,6 +37,11 @@ body{
 
 }
 
+img{
+    user-select: none;
+    pointer-events: none;
+}
+
 
  
 .topnav {
@@ -74,6 +79,10 @@ hr{
 .spacer-1{
     display: none;
 }
+
+.spacer-1 h2{
+    padding: 0 20px;
+}
 .topnav .icon {
     display: none;
 }
@@ -100,6 +109,16 @@ hr{
     }
 
     .landing-container nav{display: none;}
+
+    .sassy-2 img {
+        padding: 0;
+        max-width: none !important;
+        width: 60% !important;
+        margin: auto !important;
+    }
+    .sassy-2{
+        text-align: center;
+    }
 }
   
 @media screen and (max-width: 650px) {
@@ -142,7 +161,7 @@ hr{
     }
     .spacer-1 img{
         max-width: 70%;
-        padding-top: 5%;
+        padding-top: 175px;
     }
     .topnav{
         position: fixed;
@@ -180,6 +199,7 @@ nav{
     z-index: 5;
     font-family: 'Fugaz One', cursive;
     font-weight: 500;
+    overflow: hidden;
 
 }
 nav a:hover{
@@ -201,7 +221,7 @@ nav a{
 
 
 .socials{
-    position: absolute;
+    position: fixed;
     display: flex;
     flex-direction: column;
     right: 0;
@@ -250,16 +270,15 @@ nav a{
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Roboto', sans-serif;
-    
+    padding-bottom: 0;
 }
 .sassy-pic{
     width: 50%;
+    display: flex;
 }
 
 .sassy-pic img{
     width: 100%;
-    height: 100%;
-    padding: 20px;
 }
 
 .box-item{
@@ -334,15 +353,23 @@ nav a{
     font-weight: 500;
     width: 100%;
     z-index: 20;
-    
+    box-sizing: border-box;
 }
+
 
 .slider-container{
     display: flex;
     flex-wrap: nowrap;
-    width: 100%;
+    /* min-width: 100%; */
     padding-top: 20px;
-    animation: moveSlideshow 60s linear infinite;
+    /* animation: moveSlideshow 10s linear infinite; */
+    justify-content: center;
+    animation-direction: reverse;
+    animation-name: moveSlideshow;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-duration: 50s;
 }
 
 
@@ -354,6 +381,8 @@ nav a{
 .slider-parent{
     width: 100%;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
 }
 
 @keyframes moveSlideshow {
@@ -362,9 +391,10 @@ nav a{
     }
   
     to {
-      transform: translateX(-295%);
+      transform: translateX(100%);
     }
   }
+  
 
 /* BANNER */
 
@@ -417,11 +447,11 @@ nav a{
 }
 
 .banner a{
-    padding: 12px;
+    padding: 15px 20px;
     background-color: rgb(245, 73, 116);
     text-decoration: none;
     color: white;
-    margin: 10px;
+    margin: 10px 0;
     font-size: 1.5vw;
     border-radius: 5px;
     
@@ -656,8 +686,9 @@ nav a{
 }
 .roadmap-info{
     min-width: 60%;
-    padding-left: 5vw;
-    padding-right: 5vw;
+    padding-left: 3vw;
+    padding-right: 2vw;
+    font-size: 0.9rem;
 }
 .roadmap-info span{
     font-size: 1.3vw;
@@ -667,10 +698,20 @@ nav a{
 .percentage-box h3{
     font-size: 2.5vw;
     color: gold;
+    transition: 0.4s;
 }
 .percentage-box{
     background-color: #343a75e3 ;
     padding: 3%;
+    transition: 0.4s;
+}
+
+.percentage-box:hover{
+    background-color: gold ;
+}
+
+.percentage-box:hover h3{
+    color: #343a75;
 }
 
 /* AFTERPARTY */
@@ -732,13 +773,14 @@ nav a{
 .afterparty h4{
     font-size: 1.5vw;
     font-weight: bold;
-    min-width: 20vw;
+    min-width: 300px;
     padding-left: 1%;
+    padding: 0 10px;
 }
 .VR{
    background-color: gold; 
    width: 1px;
-   height: 8vh;
+   height: 65px;
 }
 
 
@@ -759,6 +801,7 @@ nav a{
     font-weight: bold;
     margin-right: 0;
     border-bottom: 1px solid white;
+    padding-left: 0;
 }
   
 .active, .collapsible:hover {
@@ -790,8 +833,7 @@ nav a{
     flex-direction: column;
     background-color: rgba(173, 216, 230, 0.829);
     border-radius: 15px;
-    padding-bottom: 5%;
-
+    padding-bottom: 6.5%;
 }
 
 .faq-parent{
@@ -942,6 +984,13 @@ nav a{
     display: none;
 }
 
+.copyright{
+    color: #fff;
+    font-size: 1rem;
+    padding-bottom: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
 
 @media only screen and (max-width: 900px) {
  
@@ -997,7 +1046,8 @@ nav a{
         padding: 0;
     }
     .box-item p{
-        font-size: 1.2vh;
+        font-size: 1.2rem;
+        padding-top: 0.5rem;
     }
     .slider img{
         max-width: 250px;
@@ -1052,10 +1102,13 @@ nav a{
         max-width: 100%;
     }
     .banner a{
-        font-size: 1.2vh;
+        font-size: 0.75rem;
+    }
+    .banner-list{
+        max-width: 33%;
     }
     .banner-list li{
-        font-size: 1.2vh;
+        font-size: 1rem;
     }
     .banner{
         justify-content: flex-start;
@@ -1080,13 +1133,8 @@ nav a{
     .banner h2{
         font-size:1.8vh;
     }
-    .banner a{
-        font-size: 1vh;
-        margin: 0;
-        margin-top: 4%;
-    }
     .banner-list li{
-        font-size: 1vh;
+        font-size: 0.75rem;
     }
 
     .faq-container{
@@ -1163,7 +1211,7 @@ nav a{
     .textbox{
         position: static;
         max-width: 70%;
-        font-size: 1.5vh;
+        font-size: 1rem;
         margin: 2%;
         padding: 8%;
     }

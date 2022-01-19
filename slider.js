@@ -1,49 +1,44 @@
 let squatch_list = [
-    {name:'squatch_1', img:"images/slider/1.png"},
-    {name:'squatch_2', img:"images/slider/2.png"},
-    {name:'squatch_3', img:"images/slider/3.png"},
-    {name:'squatch_4', img:"images/slider/4.png"},
-    {name:'squatch_5', img:"images/slider/5.png"},
-    {name:'squatch_6', img:"images/slider/6.png"},
-    {name:'squatch_7', img:"images/slider/7.png"},
-    {name:'squatch_8', img:"images/slider/8.png"},
-    {name:'squatch_9', img:"images/slider/9.png"},
-    {name:'squatch_10', img:"images/slider/10.png"},
-    {name:'squatch_11', img:"images/slider/11.png"},
-    {name:'squatch_12', img:"images/slider/12.png"},
-    {name:'squatch_13', img:"images/slider/13.png"},
-    {name:'squatch_14', img:"images/slider/14.png"},
-    {name:'squatch_15', img:"images/slider/15.png"},
-    {name:'squatch_17', img:"images/slider/17.png"},
-    {name:'squatch_18', img:"images/slider/18.png"},
-    {name:'squatch_19', img:"images/slider/19.png"},
-    {name:'squatch_20', img:"images/slider/20.png"},
+  { name: 'squatch_1', img: "images/slider/one.png" },
+  { name: 'squatch_2', img: "images/slider/two.png" },
+  { name: 'squatch_3', img: "images/slider/three.png" },
+  { name: 'squatch_4', img: "images/slider/four.png" },
+  { name: 'squatch_5', img: "images/slider/five.png" },
+  { name: 'squatch_6', img: "images/slider/six.png" },
+  { name: 'squatch_7', img: "images/slider/seven.png" },
+  { name: 'squatch_8', img: "images/slider/eight.png" },
+  { name: 'squatch_9', img: "images/slider/nine.png" },
+  { name: 'squatch_10', img: "images/slider/ten.png" }
 ]
-parent_object = document.getElementsByClassName("slider-container")[0];
 
-function add_division(){
-    let new_division = document.createElement("div");
-    new_division.classList.add("slider");
-
-    
-    
-    let js_generated_img = document.createElement('img');
-    js_generated_img.src = squatch_list[i].img;
-    new_division.appendChild(js_generated_img);
-
-    parent_object.appendChild(new_division);
+for (i = 0; i < squatch_list.length; i++) {
+  $(".slider-container").append('<div class="slider"><img src="' + squatch_list[i].img + '"></div>')
 }
-for(i=0; i<19; i++)
-{
-    add_division(parent_object, i);
-}
+
+$(".main_nav a").click(function (event) {
+  event.preventDefault();
+  let action = $(this.hash).offset().top;
+  $("html,body").animate({
+    scrollTop: action
+  }, 100);
+})
+
+$("#myTopnav a").click(function (event) {
+  event.preventDefault();
+  let action = $(this.hash).offset().top;
+  $("html,body").animate({
+    scrollTop: action
+  }, 100);
+  myFunction();
+})
+
 
 
 var coll = document.getElementsByClassName("collapsible");
 var i;
 
 for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
+  coll[i].addEventListener("click", function () {
     this.classList.toggle("active");
     var content = this.nextElementSibling;
     if (content.style.display === "block") {
