@@ -264,7 +264,7 @@ nav a{
 .information{
     display: flex;
     padding: 20px;
-    background-image: url(images/2ndPage/Asset\ 99.png) ;
+    /* background-image: url(images/2ndPage/Asset\ 99.png); */
     height: 100%;
     background-attachment: fixed;
     background-position: center;
@@ -639,6 +639,7 @@ nav a{
     outline: none !important;
     position: absolute;
     right: 10%;
+    cursor: pointer;
 }
 
 /* info boxes */
@@ -659,12 +660,18 @@ nav a{
 
 .textbox a{
     padding: 12px;
-    background-color: rgb(245, 73, 116);
+    background-color: gold;
     text-decoration: none;
-    color: white;
+    color: #222;
     margin: 10px;
     font-size: 1.5vw;
     border-radius: 5px;
+    transition: 0.3s;
+}
+
+.textbox a:hover{
+    background-color: rgb(245, 73, 116);
+    color: white;
 }
 
 #textbox-1{
@@ -1341,6 +1348,25 @@ nav a{
     .hide{
         display: none !important;
     }
+
+    #textbox-2,
+    #textbox-3,
+    #textbox-4,
+    #textbox-5{
+        display: block;
+    }
+
+    #reveal{
+        display: none;
+    }
+
+    #textbox-2::before,
+    #textbox-3::before,
+    #textbox-4::before,
+    #textbox-5::before{
+        display: none;
+    }
+
     .main-info-container{
         display: flex;
         height: auto;
