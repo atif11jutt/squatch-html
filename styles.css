@@ -574,26 +574,71 @@ nav a{
     display: none;
 }
 
-.metaverse:hover ~ .meta-hover{
+.metaverse:hover ~ .meta-hover,
+.metaverse:hover ~ #textbox-5{
     display: block;
     pointer-events: none;
     transition: .4s;
 }
-.hoverables:hover ~ .poster-hover{
+.hoverables:hover ~ .poster-hover,
+.hoverables:hover ~ #textbox-4{
     display: block;
     pointer-events: none;
     transition: .4s;
 }
-.spraypaint:hover ~ .spray-hover{
+.spraypaint:hover ~ .spray-hover,
+.spraypaint:hover ~ #textbox-2{
     display: block;
     pointer-events: none;
     transition: .4s;
 }
 
-.coin:hover ~ .coin-hover{
+/* .coin:hover ~ .coin-hover{
     display: block;
     pointer-events: none;
     transition: .4s;
+} */
+
+.coin:hover ~ .coin-hover,
+.coin:hover ~ #textbox-3{
+    display: block;
+    pointer-events: none;
+    transition: .4s;
+}
+
+#textbox-2,
+#textbox-3,
+#textbox-4,
+#textbox-5{
+    display: none;
+}
+
+/* shown everything */
+
+.reveal #textbox-2,
+.reveal #textbox-3,
+.reveal #textbox-4,
+.reveal #textbox-5,
+.reveal .meta-hover,
+.reveal .poster-hover,
+.reveal .spray-hover,
+.reveal .coin-hover{
+    display: block;
+    pointer-events: none;
+}
+
+#reveal{
+    padding: 12px;
+    background-color: rgb(245, 73, 116);
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+    font-size: 1.25rem;
+    border-radius: 5px;
+    border: none !important;
+    outline: none !important;
+    position: absolute;
+    right: 10%;
 }
 
 /* info boxes */
@@ -636,14 +681,15 @@ nav a{
     left: 8%;
     text-align: center;
 }
+
 #textbox-3{
-    top: 26%;
-    right: 10%;
+    top: 24%;
+    right: 22%;
     text-align: center;
 }
 #textbox-4{
     top: 50%;
-    right: 10%;
+    right: 13%;
     text-align: center;
 }
 #textbox-5{
@@ -651,6 +697,56 @@ nav a{
     left: 15%;
     text-align: center;
 }
+
+#textbox-2::before{
+    content: "";
+    position: absolute;
+    background-image: url(images/arrow.png);
+    background-size: 100% 100%;
+    right: -50px;
+    top: 20px;
+    width: 50px;
+    height: 75px;
+}
+
+#textbox-3::before{
+    content: "";
+    position: absolute;
+    background-image: url(images/arrow.png);
+    background-size: 100% 100%;
+    right: -40px;
+    top: -20px;
+    width: 40px;
+    height: 90px;
+}
+
+#textbox-4::before{
+    content: "";
+    position: absolute;
+    background-image: url(images/arrow.png);
+    background-size: 100% 100%;
+    right: -40px;
+    top: 40px;
+    width: 40px;
+    height: 75px;
+}
+
+#textbox-5::before{
+    content: "";
+    position: absolute;
+    background-image: url(images/arrow.png);
+    background-size: 100% 100%;
+    left: -50px;
+    top: 20px;
+    width: 50px;
+    height: 75px;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+
 
 .textbox{
     background-color: #3a4df7e5;

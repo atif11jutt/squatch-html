@@ -33,6 +33,18 @@ $("#myTopnav a").click(function (event) {
 })
 
 
+$("#reveal").click(function(){
+  if($(this).hasClass("active")){
+    $(this).text("REVEAL LORE")
+    $(".main-info-container").removeClass("reveal")
+  }else{
+    $(this).text("HIDE LORE")
+    $(".main-info-container").addClass("reveal")
+  }
+
+  $(this).toggleClass("active")
+})
+
 
 var coll = document.getElementsByClassName("collapsible");
 var i;
