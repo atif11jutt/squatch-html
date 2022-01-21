@@ -231,7 +231,7 @@ nav a{
     align-items: center;
     justify-content: center;
     color: white;
-    z-index: 5;
+    z-index: 500;
     /* background-color: #3a4df7a9; */
     padding-right: .5em;
     padding-left: .5em;
@@ -824,13 +824,14 @@ nav a{
     transition: 0.4s;
 }
 
-.percentage-box:hover{
+.roadmap-img:hover ~ .percentage-box{
     background-color: gold ;
 }
 
-.percentage-box:hover h3{
+.roadmap-img:hover ~ .percentage-box h3{
     color: #343a75;
 }
+
 
 /* AFTERPARTY */
 

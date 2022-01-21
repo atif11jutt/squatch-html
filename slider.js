@@ -20,7 +20,7 @@ $(".main_nav a").click(function (event) {
   let action = $(this.hash).offset().top;
   $("html,body").animate({
     scrollTop: action
-  }, 100);
+  }, 500);
 })
 
 $("#myTopnav a").click(function (event) {
@@ -28,7 +28,7 @@ $("#myTopnav a").click(function (event) {
   let action = $(this.hash).offset().top;
   $("html,body").animate({
     scrollTop: action
-  }, 100);
+  }, 500);
   myFunction();
 })
 
