@@ -295,7 +295,9 @@ nav a{
 .sassy-pic{
     width: 50%;
     display: flex;
+    display: -webkit-flex;
     align-items: end;
+    -webkit-align-items: end;
 }
 
 .sassy-pic img{
@@ -317,6 +319,7 @@ nav a{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    transition: 0.6s;
 }
 .box-item p{
     font-size: 1rem;
@@ -327,8 +330,6 @@ nav a{
 
 .box-item:hover{
     background-color: #3a4df7a9;
-    transition: 1s;
-    
 }
 
 .box-container{
@@ -908,6 +909,10 @@ nav a{
     min-height: 5vw;
     margin-bottom: 3%;
     text-align: center;
+    transition: 0.6s;
+}
+.afterparty-item:hover{
+    background-color: #3a4df7eb;
 }
 
 .afterparty{
