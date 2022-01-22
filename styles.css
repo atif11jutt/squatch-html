@@ -660,7 +660,7 @@ nav a{
 
 .textbox a{
     padding: 12px;
-    background-color: gold;
+    background-color: #95d2d1;
     text-decoration: none;
     color: #222;
     margin: 10px;
@@ -670,8 +670,7 @@ nav a{
 }
 
 .textbox a:hover{
-    background-color: rgb(245, 73, 116);
-    color: white;
+    background-color: gold;
 }
 
 #textbox-1{
@@ -824,11 +823,13 @@ nav a{
     transition: 0.4s;
 }
 
-.roadmap-img:hover ~ .percentage-box{
+.roadmap-img:hover ~ .percentage-box,
+.roadmap-info:hover ~ .percentage-box{
     background-color: gold ;
 }
 
-.roadmap-img:hover ~ .percentage-box h3{
+.roadmap-img:hover ~ .percentage-box h3,
+.roadmap-info:hover ~ .percentage-box h3{
     color: #343a75;
 }
 
@@ -1152,10 +1153,11 @@ nav a{
     }
     .box-item{
         width: 25%;
-        font-size: 3.5vh;
+        /* font-size: 3.5vh; */
         padding-left: 5%;
         padding-right: 5%;
-        height: auto;
+        font-size: 1.5rem;
+        height: 200px;
     }
     .box-con{
         padding: 0;
@@ -1201,6 +1203,7 @@ nav a{
     .faq-parent{
         background-image: url(images/1x/1x/1x/Artboard\ 2.png);
         background-size: cover;
+        background-position: center 72%;
     }
 
     .end{
@@ -1236,16 +1239,17 @@ nav a{
     }
     .banner-container{
         align-items: flex-start;
+        min-height: 240px;
     }
     .banner-container img{
-        max-width: 30%;
+        max-width: 25%;
     }
     #hand-1{
         left: 9%;
 
     }
     #hand-2{
-        right: 33%;
+        right: 40%;
         
     }
 
@@ -1391,5 +1395,8 @@ nav a{
     }
     .textbox a{
         font-size: 1rem;
+    }
+    .banner-container {
+        min-height: 200px;
     }
 }
