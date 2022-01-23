@@ -528,6 +528,7 @@ nav a{
 }
 .main-info-container img{
     max-width: 100%;
+    width: 100%;
 }
 .hoverables{
     position: absolute;
@@ -1236,7 +1237,7 @@ nav a{
         padding-top: 0.5rem;
     }
     .slider img{
-        max-width: 250px;
+        max-width: 210px;
     }
     .team-container{
         flex-wrap: wrap;
