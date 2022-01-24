@@ -1009,6 +1009,18 @@ nav a{
     position: relative;
 }
 
+@supports ( -webkit-touch-callout : none) {
+    .faq-parent {
+    background-attachment:scroll
+    }
+    }
+    
+    @supports not ( -webkit-touch-callout : none) {
+    .faq-parent {
+    background-attachment: fixed;
+    }
+    }
+
 
 .back-image{
     background-image: url(images/Asset\ 46.png);
