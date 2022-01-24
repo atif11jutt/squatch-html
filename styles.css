@@ -997,6 +997,9 @@ nav a{
     height: auto;
     background-position: center 85%;
     background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
     background-attachment: fixed;
     display: flex;
