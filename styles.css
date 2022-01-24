@@ -691,9 +691,9 @@ nav a{
 
 .textbox a{
     padding: 12px;
-    background-color: #95d2d1;
+    background-color: rgb(245, 73, 116);
     text-decoration: none;
-    color: #222;
+    color: #fff;
     margin: 10px;
     font-size: 1.5vw;
     border-radius: 5px;
@@ -702,6 +702,7 @@ nav a{
 
 .textbox a:hover{
     background-color: gold;
+    color: #222;
 }
 
 #textbox-1{
@@ -1058,9 +1059,25 @@ nav a{
     padding-top: 1%;
 }
 
-.boss-squatch img{
+.boss-squatch > div{
     width: 25%;
     padding: 1%;
+    display: inline-block;
+    position: relative;
+}
+
+.boss-squatch img{
+    width: 100%;
+}
+
+.boss-squatch .team-socials{
+    position: absolute;
+    bottom: 7vw;
+    right: 5vw;
+}
+
+.boss-squatch .team-socials a{
+    color: inherit;
 }
 
 
